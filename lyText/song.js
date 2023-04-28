@@ -4,8 +4,8 @@ let mouseClicks = 0;
 let isPlaying = false;
 
 function preload() {
-  mySound1 = loadSound("../Dreamland.mp3");
-  mySound2 = loadSound("../Love.mp3");
+  mySound1 = loadSound("Dreamland.mp3");
+  mySound2 = loadSound("Love.mp3");
 }
 
 function setup() {
