@@ -1,0 +1,157 @@
+
+  
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    height: 100vh;
+  }
+#blocks-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+  
+/* @keyframes shake {
+    0% { transform: translateX(0); }
+    25% { transform: translateX(-10px); }
+    50% { transform: translateX(0); }
+    75% { transform: translateX(10px); }
+    100% { transform: translateX(0); }
+}   */
+@keyframes shake {
+    0% { transform: translateX(0); }
+    20% { transform: translateX(-10px) rotate(2deg); }
+    30% { transform: translateX(10px) rotate(-2deg); }
+    50% { transform: translateX(-10px) rotate(-2deg); }
+    60% { transform: translateX(10px) rotate(-2deg); }
+    100% { transform: translateX(10px); }
+}
+  
+h1 {
+    font-family: 'Rubik Pixels', cursive;
+    font-size: 10em;
+    text-align: center;
+    margin: 0;
+    color: white;
+    /* animation: shake 0.3s ease-out infinite; */
+    animation: shake 1s infinite;
+}
+
+.activate-btn{
+    bottom: calc(50vh - 160px);
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    margin-bottom: -230px;
+    width: 127px;
+    color: #000;
+    cursor: pointer;
+    position: absolute;
+    z-index: 999;
+}
+.activate-btn .play-tape {
+    background-image: url(https://pinepoint.nfb.ca/images/global/play-tape.png);
+    width: 121px;
+    height: 45px;
+    text-align: center;
+    
+}
+.activate-btn .play-arrow{
+    background-image: url(https://pinepoint.nfb.ca/images/global/play-arrow.png);
+    width: 34px;
+    height: 34px;
+    position: absolute;
+    right: 14px;
+    top: 6px;
+}
+button{
+    pointer-events: all;
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+}
+
+.play-tape{
+    position: absolute;
+    box-sizing: inherit;
+
+}
+
+
+
+/* .homepic {
+    position: relative;
+    display: inline-block;
+}
+
+.homepic img:first-of-type {
+    position: absolute;
+    max-width: 500px;
+    max-height: 300px;
+    top: 0;
+    left: 0;
+}
+
+.homepic img:last-of-type {
+    position: absolute;
+    max-width: 500px;
+    max-height: 300px;
+    bottom: 0;
+    right: 0;
+} */
+.image-container {
+    position: relative;
+    width: 80%;
+    height: 100%;
+}
+
+.image-1 {
+    position: absolute;
+    top: 1%;
+    left: 0;
+    z-index: 1;
+    height: 400px;
+    width: auto;
+}
+  
+.image-2 {
+    position: absolute;
+    bottom: 15%;
+    left: 18%;
+    /* transform: translate(-50%, -50%); */
+    z-index: 2;
+    height: 650px;
+    width: auto;
+    
+}
+  
+.image-3 {
+    position: absolute;
+    bottom: 0%;
+    left: -2%;
+    /* transform: translate(-50%, -50%); */
+    z-index: 3;
+    height: 450px;
+    width: auto;
+}
+.image-4 {
+    position: absolute;
+    bottom: 0%;
+    left: 60%;
+    /* transform: translate(-50%, -50%); */
+    z-index: 3;
+    height: 400px;
+    width: auto;
+}
+.image-5 {
+    position: absolute;
+    top: 0%;
+    left: 56%;
+    /* transform: translate(-50%, -50%); */
+    z-index: 1;
+    height: 410px;
+    width: auto;
+}
