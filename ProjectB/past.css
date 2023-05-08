@@ -50,7 +50,7 @@ img {
 .video-container2{
     display: block;
     position: absolute;
-    bottom: 5%;
+    bottom: 1%;
     right: 4%;
     z-index: -11;
     width: 29%;
