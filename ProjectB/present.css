@@ -20,9 +20,19 @@ body {
     height: 43px;
     right:0;
     top:45%;
-    background-image: url(btnGo.png);
+    background-image: url(btn-past.png);
     z-index: 2;
 }
+.intofuturehtml {
+    position: absolute;
+    width: 87px;
+    height: 43px;
+    right:0;
+    top:50%;
+    background-image: url(btn-future.png);
+    z-index: 2;
+}
+
 /* #fullpage-container {
     position: relative;
     width: 100%;

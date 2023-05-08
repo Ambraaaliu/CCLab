@@ -56,3 +56,21 @@ img {
     width: 29%;
     height: auto;   
 }
+.Presenthtml {
+    position: absolute;
+    width: 87px;
+    height: 43px;
+    right:0;
+    top:45%;
+    background-image: url(btn-present.png);
+    z-index: 10;
+}
+.intofuturehtml {
+    position: absolute;
+    width: 87px;
+    height: 43px;
+    right:0;
+    top:50%;
+    background-image: url(btn-future.png);
+    z-index: 10;
+}

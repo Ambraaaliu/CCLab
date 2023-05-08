@@ -407,6 +407,30 @@ p2{
 .past:hover p2 {
     transform: translateY(-10px);
 }
+.futureVideo{
+    display: block;
+    position: absolute;
+    top:10%;
+    left: 20%;
+    background-color: transparent;
+   
+}
+
+.finalControls {
+    position: absolute;
+    bottom: 10%;
+    left: 0;
+    width: 100%;
+    text-align: center;
+}
+.finalBtn{
+    background-image: url(btn-future.png);
+    display: inline-block;
+    width: 87px;
+    height: 43px
+    
+    /* text-indent: -9999px; */   
+}
 
 /* present.html */
 /*   
