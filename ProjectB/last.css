@@ -1,0 +1,25 @@
+  
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    height: 100vh;
+  }
+  #blocks-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -10;
+  }
+  h1 {
+    font-family: 'Rubik Pixels', cursive;
+    font-size: 6em;
+    
+    text-align: center;
+    margin: 0;
+    color: white;
+    position: absolute;
+    top:0;
+    left:53%;
+  }

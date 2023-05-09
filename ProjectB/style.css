@@ -1,0 +1,480 @@
+
+  
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    height: 100vh;
+  }
+
+.loading{
+    font-family:  'Indie Flower', cursive;
+    position: relative;
+    font-size: 50px;
+    top: 50%;
+    left: 30%;
+    text-align: center;
+    color: aliceblue;
+    animation: shake 1s infinite;
+}
+
+#first{
+    position: absolute;
+    background-color: black;
+    width: 100vw;
+    height: 100vh;
+    z-index: 10;
+}
+#blocks-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+@keyframes shake {
+    0% { transform: translateX(0); }
+    20% { transform: translateX(-10px) rotate(2deg); }
+    30% { transform: translateX(10px) rotate(-2deg); }
+    50% { transform: translateX(-10px) rotate(-2deg); }
+    60% { transform: translateX(10px) rotate(-2deg); }
+    100% { transform: translateX(10px); }
+}
+  
+h1 {
+    font-family: 'Rubik Pixels', cursive;
+    font-size: 10em;
+    text-align: center;
+    margin: 0;
+    color: white;
+    /* animation: shake 0.3s ease-out infinite; */
+    animation: shake 1s infinite;
+}
+
+.activate-btn{
+    bottom: calc(50vh - 160px);
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    margin-bottom: -230px;
+    width: 127px;
+    color: #000;
+    cursor: pointer;
+    position: absolute;
+    z-index: 999;
+}
+.activate-btn .play-tape {
+    background-image: url(https://pinepoint.nfb.ca/images/global/play-tape.png);
+    width: 121px;
+    height: 45px;
+    text-align: center;   
+}
+.activate-btn .play-arrow{
+    background-image: url(https://pinepoint.nfb.ca/images/global/play-arrow.png);
+    width: 34px;
+    height: 34px;
+    position: absolute;
+    right: 14px;
+    top: 10px;
+}
+button{
+    pointer-events: all;
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+}
+
+.play-tape{
+    position: absolute;
+    box-sizing: inherit;
+
+}
+.activate-btn:hover .play-arrow {
+    transform: translatey(-10px);
+}
+.image-container {
+    position: relative;
+    width: 80%;
+    height: 100%;
+}
+
+.image-1 {
+    position: absolute;
+    top: 1%;
+    left: 0;
+    z-index: 1;
+    height: 400px;
+    width: auto;
+    /* transition: height 1.5s; */
+    animation-name: apper1; 
+    animation-duration: 1.5s;
+}
+@keyframes apper1 {
+    0% { height: 0px;}
+    100% { height: 400px; }
+} 
+.image-2 {
+    position: absolute;
+    bottom: 15%;
+    left: 18%;
+    /* transform: translate(-50%, -50%); */
+    z-index: 2;
+    height: 650px;
+    width: auto;
+    animation-name: apper2;
+    animation-duration: 1.5s;
+    
+}
+@keyframes apper2 {
+    0% { height: 0px;}
+    100% { height: 650px; }
+} 
+.image-3 {
+    position: absolute;
+    bottom: 0%;
+    left: -2%;
+    /* transform: translate(-50%, -50%); */
+    z-index: 3;
+    height: 450px;
+    width: auto;
+    animation-name: apper3;
+    animation-duration: 1.5s;
+}
+@keyframes apper3 {
+    0% { height: 0px;}
+    100% { height: 450px; }
+}
+.image-4 {
+    position: absolute;
+    bottom: 0%;
+    left: 60%;
+    /* transform: translate(-50%, -50%); */
+    z-index: 3;
+    height: 400px;
+    width: auto;
+    animation-name: apper4;
+    animation-duration: 1.5s;
+}
+@keyframes apper4 {
+    0% { height: 0px;}
+    100% { height: 400px; }
+}
+.image-5 {
+    position: absolute;
+    top: 0%;
+    left: 56%;
+    /* transform: translate(-50%, -50%); */
+    z-index: 1;
+    height: 410px;
+    width: auto;
+    animation-name: apper5;
+    animation-duration: 1.5s;
+}
+@keyframes apper5 {
+    0% { height: 0px;}
+    100% { height: 410px; }
+}
+.introVideo{
+    display: block;
+    position: absolute;
+    top:10%;
+    left: 20%;
+    background-color: transparent;
+   
+}
+.videoControls {
+    position: absolute;
+    bottom: 10%;
+    left: 0;
+    width: 100%;
+    text-align: center;
+}
+.goBtn {
+    display: inline-block;
+    width: 87px;
+    height: 43px;
+    background-image: url(btnGo.png);
+    /* text-indent: -9999px; */   
+}
+.videoControls:hover .goBtn {
+    transform: translateY(-10px);
+  }
+header{
+    display: inline-block;
+    top: 0;
+    left: 0;
+}
+.realTitle{
+    position:absolute;
+    text-align: center;
+    height: 170px;
+    left: 20%;
+    top: 1%;
+    z-index: 1;
+}
+h3{
+    font-family: 'Darumadrop One', cursive;
+    font-size: 7em;
+    font-weight: 100;
+    text-align: center;
+    color: #c36262;
+    margin: 0;
+    -webkit-text-stroke: 2px black;
+}
+h4{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 3em;
+    font-weight: bolder;
+    text-align: center;
+    color: #c36262;
+    margin: 0;
+    -webkit-text-stroke: 0.1px black;
+}
+#back-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -10;
+}
+.presentpic{
+    display: inline-block;
+    top: 0;
+    left: 0;
+}
+  
+p1{
+    position:absolute;
+    text-align: center;
+    font-family: 'Indie Flower', cursive;
+    font-size: 3em;
+    color: #6c3232;
+    left: 16%;
+    top: 75%;
+    z-index: 1;
+    font-size: 3em;
+}
+.presentback{
+    left: 7%; 
+    position: absolute;
+    top: 28%;
+    z-index: -1;
+    animation: float1 1s  ease-in-out infinite;
+}
+@keyframes float1 {
+    0% {
+      transform: translatex(0px);
+    }
+    50% {
+      transform: translatex(-30px);
+    }
+    100% {
+      transform: translateX(0px);
+    }
+  }
+
+.presentMainPic {
+    left: 10%; 
+    position: absolute;
+    top: 35%;
+    z-index: 1;
+     
+}
+.bottomFlower{
+    left: 10%; 
+    position: absolute;
+    top: 30%;
+    z-index: 2;
+    animation: shake1 1.5s  ease-in-out infinite;
+}
+@keyframes shake1 {
+    0% { transform: translatey(0); }
+    20% { transform: translatey(10px) rotate(2deg); }
+    30% { transform: translatey(-10px) rotate(-2deg); }
+    50% { transform: translatey(10px) rotate(2deg); }
+    60% { transform: translatey(-10px) rotate(-2deg); }
+    100% { transform: translatey(0); }
+}
+
+.topflowers{
+    left: 7%; 
+    position: absolute;
+    top: 28%;
+    z-index: 2;
+    animation: shake2 1.5s  ease-in-out infinite;
+}
+@keyframes shake2 {
+    0% { transform: translateX(0); }
+    20% { transform: translateX(10px) rotate(2deg); }
+    30% { transform: translateX(-10px) rotate(-2deg); }
+    50% { transform: translateX(10px) rotate(2deg); }
+    60% { transform: translateX(-10px) rotate(-2deg); }
+    100% { transform: translateX(0); }
+}
+.present:hover .presentback {
+    animation: none;
+    opacity: 0.75;
+}
+  
+.present:hover .presentMainPic {
+    transform: scale(1.1);
+}
+  
+.present:hover .bottomFlower {
+    animation: none;
+}
+  
+.present:hover .topflowers {
+    animation: none;
+}
+  
+.present:hover p1 {
+    transform: translateY(-10px);
+}
+
+.pastpic{
+    display: inline-block;
+    top: 0;
+    left: 0;
+}
+  
+p2{
+    position:absolute;
+    text-align: center;
+    font-family: 'Indie Flower', cursive;
+    font-size: 3em;
+    color: #6c3232;
+    right: 16%;
+    top: 75%;
+    z-index: 1;
+    font-size: 3em;
+}
+.pastMainPic {
+    right: 10%;
+    position: absolute;
+    top: 28%;
+
+    z-index: 1;
+      
+}
+.pastback{
+    right: 10%;
+    position: absolute;
+    top: 28%;
+    z-index: -1;
+    animation: float2 2s ease-in-out infinite;
+}
+
+@keyframes float2 {
+    0% {
+      transform: translatey(0px);
+    }
+    50% {
+      transform: translatey(-30px);
+    }
+    100% {
+      transform: translatey(0px);
+    }
+  }
+.pastpop{
+    right: 10%;  /* or adjust the percentage to the desired value */
+    position: absolute;
+    top: 28%;
+    z-index: 2;
+    animation: shake3 1s  ease-in-out infinite;
+}
+@keyframes shake3 {
+    0% { transform: translateX(0); }
+    20% { transform: translateX(-10px) rotate(-2deg); }
+    30% { transform: translateX(10px) rotate(2deg); }
+    50% { transform: translateX(-10px) rotate(-2deg); }
+    60% { transform: translateX(10px) rotate(2deg); }
+    100% { transform: translateX(0); }
+}
+.past:hover .pastback {
+    animation: none;
+    opacity: 0.75;
+}
+  
+.past:hover .pastMainPic {
+    transform: scale(1.1);
+}
+  
+.past:hover .pastpop {
+    animation: none;
+}
+  
+.past:hover p2 {
+    transform: translateY(-10px);
+}
+.futureVideo{
+    display: block;
+    position: absolute;
+    top:10%;
+    left: 20%;
+    background-color: transparent;
+   
+}
+
+.finalControls {
+    position: absolute;
+    bottom: 10%;
+    left: 0;
+    width: 100%;
+    text-align: center;
+}
+.finalBtn{
+    background-image: url(btn-future.png);
+    display: inline-block;
+    width: 87px;
+    height: 43px
+    
+    /* text-indent: -9999px; */   
+}
+
+/* present.html */
+/*   
+#fullpage-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+canvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    left: img2Width;
+}
+#front-img{
+    position: absolute;
+    width: 200vw;
+    height: 200vh;
+    z-index: 10;
+    left:0px;
+    top: 0px;
+
+}
+#back-img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 1; 
+    left:0px;
+    top: 0px;
+} */
+
+/* past.html */
+/* img{
+    position: absolute;
+    top: 500px;
+    left: 400px;
+    transform: translate(-50%,-50%)scale(1);
+} */
+
+
+  
+
+
+  
+

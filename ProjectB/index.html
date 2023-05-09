@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Me, Myself & I</title>
+    
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.min.js"></script>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Rubik+Pixels&display=swap');
+  </style>
+ 
+  <!-- <embed src="mainBGM.MP3" hidden="flase" autostart="true" loop="true"> -->
+
+  
+</head>
+<body>
+    <audio id = "mainBGM">
+        <source src="mainBGM.MP3" type="audio/mpeg"> 
+      </audio>
+    <div id="first">
+        <button type="button" class="loading" onclick="loading()">Hey ! Click Me to Start : ) </button>
+    </div> 
+    <script>
+        function loading(){
+            document.getElementById("first").style.display = "none";
+            var audio = document.getElementById("mainBGM");
+            audio.play(); 
+            var img1 = document.getElementsByClassName("image-1");
+            // img1.style.animationName = "apper1";
+            // img1.style.animationDuration= "1.5s";
+        }
+    </script>
+    <!-- <div id="canvasContainer1"></div>  -->
+    <!-- <audio autoplay="autoplay" loop="loop" preload="auto" src="mainBGM.MP3"> -->
+    <div id="blocks-container"></div> 
+    <div class="image-container">
+        <img src="WechatIMG909.png" class="image-1">
+        <img src="cake.png" class="image-2">
+        <img src="guizhe.png" class="image-3">
+        <img src="dunxia.png" class="image-4">
+        <img src="guilian.png" class="image-5">
+    </div>
+  <main>
+    
+    <h1>Me, Myself & I
+        <div class="mainPagePlay">
+            <div class="preloader" style="top: 406.618px; left: 476.181px; background-position: 0px -150px;"></div>
+            <a href="intro.html" class="activate-btn" style="display: block;">
+                <div class="play-tape"></div>
+                <button class="play-arrow"></button>
+            </a>
+        </div>
+    </h1>
+  </main>
+</body>
+<script src="homepage.js"></script>
+</html>
+
+
+
