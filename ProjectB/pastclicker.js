@@ -1,6 +1,8 @@
 const images=[
-    "pastImg1.png","pastImg2.png","pastImg3.png","pastImg4.png",
-    "pastImg5.png","pastImg6.png","pastImg7.png","pastImg8.png"
+    "PastImg1.png","PastImg9.png","PastImg3.png","PastImg10.png",
+    "PastImg2.png", "PastImg11.png", "PastImg4.png", "PastImg12.png",
+    "PastImg5.png","PastImg13.png","PastImg6.png","PastImg14.png",
+    "PastImg7.png","PastImg15.png","PastImg8.png","PastImg16.png"
 ]
 
 let i = 0
